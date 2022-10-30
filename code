@@ -9,3 +9,46 @@ for i in range(len(s)-1,0,-1):
         h=i-1
 k=k+" "+s[0:h+1]
 print(k)
+
+
+------------------------------------------------------------------------------
+s='abcdef'
+l=list(s)
+print(l)
+k=len(l)-1
+s1=''
+for i in range(len(l)):
+    if(k<=i):
+        if(len(l)%2!=0):
+            s1=s1+l[i]
+        break
+    else:
+        s1=s1+l[i]+l[k]
+        k=k-1
+print(s1)
+
+--------------------------------------------------------------------------------------------
+
+numbers=[3,3,5,2,3]
+flag=1 
+sum=0
+while(
+    flag):
+        k=0
+        for i in range(len(numbers)):
+            if numbers[i]!=0:
+                k=1 
+                index=i 
+                print(index)
+                sum=sum+numbers[index]
+                break
+            
+        if(k==0):
+            flag=0
+            break
+        for i in range(index,len(numbers)):
+            if(numbers[i]-numbers[index>numbers[index]]):
+                numbers[i]=numbers[i]-numbers[index]
+            else:
+                break
+print(sum)
